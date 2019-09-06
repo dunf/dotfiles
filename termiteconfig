@@ -1,165 +1,25 @@
-[options]
-scroll_on_output = false
-scroll_on_keystroke = true
-audible_bell = false
-mouse_autohide = false
-allow_bold = true
-dynamic_title = true
-urgent_on_bell = true
-clickable_url = true
-font = Source Code Pro Medium 11
-scrollback_lines = 10000
-search_wrap = true
-#icon_name = terminal
-#geometry = 640x480
-
-# "system", "on" or "off"
-cursor_blink = system
-
-# "block", "underline" or "ibeam"
-cursor_shape = block
-
-# $BROWSER is used by default if set, with xdg-open as a fallback
-#browser = xdg-open
-
-# set size hints for the window
-#size_hints = false
-
-# Hide links that are no longer valid in url select overlay mode
-filter_unmatched_urls = true
-
-# emit escape sequences for extra modified keys
-#modify_other_keys = false
-
-#[colors]
-##cursor = #dcdccc
-##cursor_foreground = #dcdccc
-##foreground = #839496
-##foreground = #00aa88
-##foreground = #1b3c5e
-##foreground_bold = #ffffff
-##background = #002b36
-#background = #1b3c5e
-## 20% background transparency (requires a compositor)
-##background = rgba(63, 63, 63, 0.8)
-#
-## if unset, will reverse foreground and background
-#highlight = #2f2f2f
-#
-## colors from color0 to color254 can be set
-#color0 = #3f3f3f
-#color1 = #705050
-#color2 = #60b48a
-#color3 = #dfaf8f
-#color4 = #506070
-#color5 = #dc8cc3
-#color6 = #8cd0d3
-#color7 = #dcdccc
-#color8 = #709080
-#color9 = #dca3a3
-#color10 = #c3bf9f
-#color11 = #f0dfaf
-#color12 = #94bff3
-#color13 = #ec93d3
-#color14 = #93e0e3
-#color15 = #ffffff
-
-#[colors]
-#
-## special
-#foreground      = #d7d0c7
-#foreground_bold = #d7d0c7
-#cursor          = #d7d0c7
-#background      = #1c3c5e
-#
-## black
-#color0  = #101010
-#color8  = #404040
-#
-## red
-#color1  = #e84f4f
-#color9  = #d23d3d
-#
-## green
-#color2  = #b8d68c
-#color10 = #a0cf5d
-#
-## yellow
-#color3  = #e1aa5d
-#color11 = #f39d21
-#
-## blue
-#color4  = #7dc1cf
-#color12 = #4e9fb1
-#
-## magenta
-#color5  = #9b64fb
-##color5  = 514ce9
-#color13 = #8542ff
-##color13 = 3a50fc
-#
-## cyan
-#color6  = #6d878d
-#color14 = #42717b
-#
-## white
-#color7  = #dddddd
-#color15 = #dddddd
-
-[colors]
-
-# special
-foreground      = #d7d0c7
-foreground_bold = #d7d0c7
-cursor          = #d7d0c7
-background      = #1c3c5e
-
-# black
-color0  = #101010
-#color8  = #404040
-color8 = #D58C8C
-
-# red
-color1  = #e84f4f
-color9  = #d23d3d
-
-# green
-color2  = #b8d68c
-color10 = #a0cf5d
-
-# yellow
-color3  = #e1aa5d
-color11 = #f39d21
-
-# blue
-color4  = #7dc1cf
-color12 = #4e9fb1
-
-# magenta
-#color5  = #3f3c94
-color5  = #eeeeff
-#color13 = #495df9
-color13 = #838fe7
-
-# cyan
-color6  = #6d878d
-#color14 = #42717b
-color14  = #4ad0ed
-
-# white
-color7  = #dddddd
-color15 = #dddddd
-
-
-[hints]
-#font = Monospace 7
-foreground = #dcdccc
-background = #3f3f3f
-active_foreground = #e68080
-active_background = #3f3f3f
-padding = 1
-border = #3f3f3f
-border_width = 0.5
-#roundness = 2.0
-
-# vim: ft=dosini cms=#%s
+[global_config]
+  window_state = maximise
+[keybindings]
+  go_down = <Shift><Alt>k
+  go_left = <Shift><Alt>j
+  go_right = <Shift><Alt>ooblique
+  go_up = <Shift><Alt>l
+  layout_launcher = <Alt>apostrophe
+  split_horiz = <Shift><Alt>v
+  split_vert = <Shift><Alt>b
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_color = "#002b36"
+    cursor_color = "#aaaaaa"
+    foreground_color = "#839496"
+    palette = "#000000:#cc0000:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
